@@ -1,0 +1,150 @@
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('Estadio.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#layout {
+
+    background-color: rgba(253, 253, 230, 0.95); 
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: solid black;
+    padding: 30px 40px;
+    margin: 5% auto;
+    width: fit-content;
+    min-width: 420px; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    color: blue;
+    gap: 15px;
+}
+
+h1 {
+    margin-top: 0%;
+    color: red;
+    text-align: center;
+}
+
+input[type="number"], select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: blue; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+#btnVaciar{
+    background-color: #dc3545; 
+    width: 100%;
+}
+
+#btnVaciar:hover {
+    background-color: #c82333;
+}
+
+#seccionCompras {
+    margin-top: 30px;
+    border-top: 2px dashed black;
+    padding-top: 15px;
+}
+
+#seccionCompras h2 {
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+}
+
+#listaCompras {
+    list-style-type: none;
+    padding: 0;
+}
+
+#listaCompras li {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-size: 14px;
+}
+
+.controles-eliminar {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.controles-eliminar input {
+    width: 45px;
+    padding: 3px;
+    font-size: 14px;
+}
+
+.btn-eliminar {
+    background-color: red;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.btn-eliminar:hover {
+    background-color: darkred;
+}
+
+.precio-item {
+    color: #28a745;
+    font-weight: bold;
+    display: block;
+    margin-top: 4px;
+}
+
+#contenedorTotal {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right;
+    margin-top: 15px;
+}
+
+#contenedorTotal h3 {
+    margin: 0;
+    color: #333;
+}
+
+#btnimprimir {
+    display: block;
+    margin: 15px auto 0;
+    width: fit-content;
+    font-family: monospace;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}

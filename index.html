@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletas</title>
+    <link rel="stylesheet" href="CSS.css">
+    <script src="Js.js" defer></script>
+</head>
+<body>
+ <div id="layout">
+    <h1>Comprar del Ticket Mundial</h1>
+    <div class="formulario">
+    <label for="estadio">Elige el estadio al que desea asistir:<br></label>
+        <select name="estadio" id="estadio">
+            <option value="" disabled selected>Seleccione una opcion...</option>
+            <option value="usa">SoFi Stadium</option>
+            <option value="ca">BMO Field</option>
+            <option value="mex">Estadio Akron</option>
+        </select>
+
+        <label for="diaHora">Seleccione fecha y hora:</label>
+        <select name="diaHora" id="diaHora" disabled>
+        <option value="" disabled selected>Seleccione fecha y hora...</option>
+        </select>
+
+        <label for="cantidad">Cantidad de Tickets:</label>
+        <input type="number" id="cantidad" min="1" value="1">
+
+        <button type="button" id="btnComprar">Agregar al carrito</button>
+
+    </div>
+
+    <div id="seccionCompras">
+        <h2>Mis Tickets (<span id="totalTickets">0</span>)</h2>
+
+        <div id="contenedorTotal" style="display: none;">
+            <h3>Total a Pagar: $<span id="precioTotal">0</span> USD</h3>
+        </div>
+
+        <ul id="listaCompras"></ul>
+        <button type="button" id="btnVaciar" style="display: none;">Eliminar Todas</button>
+    
+    </div>
+    <button type="button" id="btnimprimir" style="display:none" onclick="imprimirTickets()">Imprimir Tickets</button>
+ </div>
+</body>
+</html>
